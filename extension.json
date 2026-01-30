@@ -1,0 +1,29 @@
+{
+	"name": "NeayiSpecialProperties",
+	"version": "1.0.0",
+	"author": [
+		"Neayi"
+	],
+	"url": "https://github.com/neayi/mw-NeayiSpecialProperties",
+	"descriptionmsg": "neayispecialproperties-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "semantic",
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"SemanticExtraSpecialProperties": "*"
+		}
+	},
+	"MessagesDirs": {
+		"NeayiSpecialProperties": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"NeayiSpecialProperties\\": "src/"
+	},
+	"Hooks": {
+		"sespLocalDefinitions": "NeayiSpecialProperties\\Hooks::onSespLocalDefinitions"
+	},
+	"manifest_version": 2
+}
