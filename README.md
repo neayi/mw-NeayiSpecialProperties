@@ -49,10 +49,10 @@ You can set the description page property using various methods:
 2. **Using PageProperties extension:**
    Add the description in the page properties interface.
 
-3. **Programmatically:**
+3. **Programmatically (from an extension or hook):**
    ```php
-   $pageProps = MediaWiki\MediaWikiServices::getInstance()->getPageProps();
-   $pageProps->setProperty( $title, 'description', 'Your description here' );
+   $outputPage = $context->getOutput();
+   $outputPage->setProperty( 'description', 'Your description here' );
    ```
 
 ### Querying the Description Property

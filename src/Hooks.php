@@ -36,8 +36,12 @@ class Hooks {
 				$propertyNames = [ 'description' ];
 				$properties = $pageProps->getProperties( [ $title ], $propertyNames );
 				$pageId = $title->getArticleID();
-				$value = $properties[$pageId]['description'] ?? null;
 				
+				if ( !isset( $properties[$pageId]['description'] ) ) {
+					return null;
+				}
+				
+				$value = $properties[$pageId]['description'];
 				return new SMWDIBlob( $value );
 			}
 		];
