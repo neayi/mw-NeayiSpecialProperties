@@ -19,8 +19,8 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"MediaWiki\\Extension\\NeayiSpecialProperties\\Hooks\\SemanticPropertiesHook": "includes/Hooks/SemanticPropertiesHook.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\NeayiSpecialProperties\\": "includes/"
 	},
 	"Hooks": {
 		"SemanticExtraSpecialPropertiesHandlers": [

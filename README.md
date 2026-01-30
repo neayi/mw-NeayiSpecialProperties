@@ -35,7 +35,7 @@ This extension integrates with SemanticExtraSpecialProperties to provide custom 
 
 This extension works out of the box with no additional configuration required. It automatically registers the following semantic properties:
 
-- **Description**: A text property for page descriptions
+- **Neayi description**: A text property for custom page descriptions
 
 ## Usage
 

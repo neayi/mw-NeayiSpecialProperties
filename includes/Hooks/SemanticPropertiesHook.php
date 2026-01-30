@@ -21,11 +21,12 @@ class SemanticPropertiesHook {
 	 * @return bool True to continue hook processing
 	 */
 	public static function onSemanticExtraSpecialPropertiesHandlers( PropertyRegistry $propertyRegistry ) {
-		// Register the Description property
-		// This adds a semantic property for page descriptions
+		// Register a custom Description property
+		// Property ID without underscore to avoid conflicts with SMW reserved properties
+		// Parameters: ID, Label, Type (text), Visibility (true = visible)
 		$propertyRegistry->registerProperty(
-			'_DESCRIPTION',
-			'Description',
+			'NEAYI_DESCRIPTION',
+			'Neayi description',
 			'_txt',
 			true
 		);
