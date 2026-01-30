@@ -6,6 +6,8 @@ A MediaWiki extension that adds a semantic special property "Description" to pag
 
 This extension integrates with [SemanticExtraSpecialProperties (SESP)](https://github.com/SemanticMediaWiki/SemanticExtraSpecialProperties) to add a custom semantic property `___DESCRIPTION` that automatically extracts the `description` page property value and makes it available as a semantic property.
 
+**Note:** The property ID uses triple underscores (`___DESCRIPTION`) to distinguish it as a custom property from SESP's built-in properties which use single or double underscores. This naming convention helps avoid conflicts with future SESP built-in properties.
+
 ## Requirements
 
 - MediaWiki 1.35 or later

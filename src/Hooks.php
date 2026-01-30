@@ -31,6 +31,11 @@ class Hooks {
 				SemanticData $semanticData
 			) {
 				$title = $semanticData->getSubject()->getTitle();
+				
+				if ( $title === null ) {
+					return null;
+				}
+
 				$pageProps = MediaWikiServices::getInstance()->getPageProps();
 				$properties = $pageProps->getProperties( [ $title ], [ 'description' ] );
 				$pageId = $title->getArticleID();
@@ -40,6 +45,12 @@ class Hooks {
 				}
 
 				$value = $properties[$pageId]['description'];
+				
+				// Ensure the value is a string
+				if ( !is_string( $value ) ) {
+					return null;
+				}
+
 				return new SMWDIBlob( $value );
 			}
 		];
