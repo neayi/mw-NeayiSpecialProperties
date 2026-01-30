@@ -25,7 +25,6 @@ class Hooks {
 			'id' => '___DESCRIPTION',
 			'type' => '_txt',
 			'alias' => 'sesp-property-description',
-			'label' => 'Description',
 			'callback' => static function (
 				AppFactory $appFactory,
 				DIProperty $property,
@@ -33,14 +32,13 @@ class Hooks {
 			) {
 				$title = $semanticData->getSubject()->getTitle();
 				$pageProps = MediaWikiServices::getInstance()->getPageProps();
-				$propertyNames = [ 'description' ];
-				$properties = $pageProps->getProperties( [ $title ], $propertyNames );
+				$properties = $pageProps->getProperties( [ $title ], [ 'description' ] );
 				$pageId = $title->getArticleID();
-				
+
 				if ( !isset( $properties[$pageId]['description'] ) ) {
 					return null;
 				}
-				
+
 				$value = $properties[$pageId]['description'];
 				return new SMWDIBlob( $value );
 			}
