@@ -20,12 +20,7 @@
 		]
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\NeayiSpecialProperties\\": "includes/"
-	},
-	"Hooks": {
-		"SemanticExtraSpecialPropertiesHandlers": [
-			"MediaWiki\\Extension\\NeayiSpecialProperties\\Hooks\\SemanticPropertiesHook::onSemanticExtraSpecialPropertiesHandlers"
-		]
+		"NeayiSpecialProperties\\": "src/"
 	},
 	"manifest_version": 2
 }

@@ -1,0 +1,10 @@
+{
+    "intelephense.environment.includePaths": [
+        "../../includes",
+        "../SemanticMediawiki",
+        "../SemanticMediaWiki/src",
+        "../SemanticMediaWiki/includes",
+        "../SemanticMediaWiki/includes/datavalues",
+        "../SemanticMediaWiki/includes/dataitems"
+    ]
+}
