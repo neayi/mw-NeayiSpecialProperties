@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Neayi"
+		]
+	},
+	"neayispecialproperties-desc": "Fügt Seiten eine semantische Spezialeigenschaft 'Beschreibung' mithilfe von Seiteneigenschaften hinzu",
+	"sesp-property-description": "Beschreibung"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Neayi"
+		]
+	},
+	"neayispecialproperties-desc": "Dodaje semantyczną właściwość specjalną 'Opis' do stron za pomocą właściwości strony",
+	"sesp-property-description": "Opis"
+}
